@@ -1,5 +1,5 @@
 import { MenuItem, Select, Typography } from "@mui/material";
-import Styled from "./Info.styled";
+import Styled from "./Info.styled.ts";
 
 import {
   AgeRestrictionIcon,
