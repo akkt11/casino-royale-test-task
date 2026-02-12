@@ -11,6 +11,7 @@ import {
   XIcon,
 } from "../../../assets";
 import { Geo } from "../../../shared";
+import { useTranslation } from "react-i18next";
 
 const {
   Container,
@@ -22,13 +23,22 @@ const {
 } = Styled;
 
 export const Info = () => {
+  const { t, i18n } = useTranslation();
+
+  const hanldeChangeLang = (value: number) => {
+    const foundGeo = Geo.find(({ id }) => id === value);
+    i18n.changeLanguage(foundGeo?.country);
+  };
+
+  const currentLanguage = Geo.find(({ country }) => country === i18n.language);
+
   return (
     <Container>
       <CertificateContainer>
         <CertificateDescription>
           <AgeRestrictionIcon />
 
-          <Typography color="#FBFBFB70">Only 18+</Typography>
+          <Typography color="#FBFBFB70">{t("only")} 18+</Typography>
         </CertificateDescription>
 
         <CertificateDescription>
@@ -36,18 +46,14 @@ export const Info = () => {
             <LicenseIcon />
           </div>
 
-          <Typography color="#FBFBFB70">
-            Casino is certified by the Anjouan Gaming Authority
-          </Typography>
+          <Typography color="#FBFBFB70">{t("casinoCertified")}</Typography>
         </CertificateDescription>
       </CertificateContainer>
 
       <ActionContainer>
         <Select
-          labelId="select-label"
-          id="select"
-          // value={age}
-          // onChange={handleChange}
+          value={currentLanguage?.id}
+          onChange={(e) => hanldeChangeLang(e.target.value as number)}
           sx={{
             background: "#ffffff10",
             minWidth: 289,
@@ -70,7 +76,7 @@ export const Info = () => {
         </Select>
 
         <SocialContainer>
-          <Typography color="#BABABA">Us on social media:</Typography>
+          <Typography color="#BABABA">{t("social")}</Typography>
 
           <IconsContainer>
             <InstagramIcon />

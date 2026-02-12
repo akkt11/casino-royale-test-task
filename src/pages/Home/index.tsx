@@ -3,10 +3,12 @@ import { CasinoRouletteIcon, LogoIcon } from "../../assets";
 import Styled from "./Home.styled";
 import { useState } from "react";
 import { GameModal } from "../../components/GameModal";
+import { useTranslation } from "react-i18next";
 
 const { Container, CasinoContainer } = Styled;
 
 export const Home = () => {
+  const { t } = useTranslation();
   const [openGame, setOpenGame] = useState(false);
 
   return (
@@ -25,7 +27,7 @@ export const Home = () => {
             fullWidth
             onClick={() => setOpenGame(true)}
           >
-            Open the game
+            {t("openGame")}
           </Button>
         </CasinoContainer>
       </Container>

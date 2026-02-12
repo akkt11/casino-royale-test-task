@@ -4,12 +4,16 @@ import App from "./App.tsx";
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider } from "styled-components";
 import { customTheme } from "./shared/theme.ts";
+import { I18nextProvider } from "react-i18next";
+import i18n from "./i18n.ts";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider theme={customTheme}>
-      <App />
-      <CssBaseline />
-    </ThemeProvider>
+    <I18nextProvider i18n={i18n}>
+      <ThemeProvider theme={customTheme}>
+        <App />
+        <CssBaseline />
+      </ThemeProvider>
+    </I18nextProvider>
   </StrictMode>,
 );

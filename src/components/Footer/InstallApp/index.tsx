@@ -1,6 +1,7 @@
 import { Typography, Button } from "@mui/material";
 import { ManWithGlassesIcon, LogoIcon, DownloadIcon } from "../../../assets";
 import Styled from "./InstallApp.styled";
+import { useTranslation } from "react-i18next";
 
 const {
   Container,
@@ -11,6 +12,8 @@ const {
 } = Styled;
 
 export const InstallApp = () => {
+  const { t } = useTranslation();
+
   return (
     <Container>
       <IconContainer>
@@ -23,10 +26,10 @@ export const InstallApp = () => {
         <DownloadContainer>
           <DescriptionContainer>
             <Typography variant="h4" fontSize={32} fontWeight={600}>
-              Download Casino
+              {t("downloadCasino")}
             </Typography>
 
-            <Typography color="#BABABA">Play Min anywhere, anytime</Typography>
+            <Typography color="#BABABA"> {t("playAnywhere")}</Typography>
           </DescriptionContainer>
 
           <Button
@@ -39,7 +42,7 @@ export const InstallApp = () => {
               textTransform: "capitalize",
             }}
           >
-            Install App
+            {t("installApp")}
           </Button>
         </DownloadContainer>
       </InfoContainer>
