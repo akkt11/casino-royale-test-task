@@ -1,7 +1,8 @@
-import { Typography, Button } from "@mui/material";
+import { Typography } from "@mui/material";
 import { ManWithGlassesIcon, LogoIcon, DownloadIcon } from "../../../assets";
 import Styled from "./InstallApp.styled";
 import { useTranslation } from "react-i18next";
+import { Button, type CountryCode } from "../../../shared";
 
 const {
   Container,
@@ -12,12 +13,12 @@ const {
 } = Styled;
 
 export const InstallApp = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Container>
       <IconContainer>
-        <ManWithGlassesIcon />
+        <ManWithGlassesIcon country={i18n.language as CountryCode} />
       </IconContainer>
 
       <InfoContainer>
@@ -29,7 +30,7 @@ export const InstallApp = () => {
               {t("downloadCasino")}
             </Typography>
 
-            <Typography color="#BABABA"> {t("playAnywhere")}</Typography>
+            <Typography color="var(--gray)"> {t("playAnywhere")}</Typography>
           </DescriptionContainer>
 
           <Button

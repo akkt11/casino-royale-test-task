@@ -1,12 +1,12 @@
 :root {
-  font-family: "Avenir", GadGet, sans-serif;
-  --yellow-gradient: linear-gradient(to right, #ffbc3b, #ffcf7b);
-  --orange-gradient: linear-gradient(to right, #ff864c, #f2a276);
+  --orange-gradient: linear-gradient(90deg, #ff8d6b 5%, #ffba47 100%);
   --violet-gradient: linear-gradient(to right, #9e6aff, #c7acfb);
   --purpure-gradient: linear-gradient(to right, #8d70ee, #4d9fca);
   --overview-gradient: linear-gradient(to right, #b64fb0, #8051ff);
-  --overview-gradient-dark: linear-gradient(to right, #4a1f49, #311d63);
   --red-gradient: linear-gradient(to right, #e4334d, #e4687a);
-  --gray: #e0e0e0;
-  --dark-gray: #616161;
+  --white: #fff;
+  --black: #000;
+  --gray: #bababa;
+  --dark-gray: #fbfbfb70;
+  --white-transparent: #ffffff10;
 }

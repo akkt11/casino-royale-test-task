@@ -1,6 +1,7 @@
 import { Footer } from "./components/Footer";
 import Styled from "./App.styled";
 import { Home } from "./pages/Home";
+import "./App.css";
 
 const { Container, Main } = Styled;
 

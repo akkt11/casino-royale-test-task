@@ -23,7 +23,7 @@ export default {
     width: 390px;
     border: 1px dashed orange;
     border-radius: 16px;
-    background: #ffffff10;
+    background: var(--white-transparent);
 
     @media (max-width: 1370px) {
       max-width: 390px;

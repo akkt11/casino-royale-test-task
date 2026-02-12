@@ -1,4 +1,7 @@
 import { createTheme } from "@mui/material/styles";
+import i18n from "../i18n";
+
+const currentLanguage = i18n.language;
 
 export const customTheme = createTheme({
   typography: {
@@ -13,7 +16,7 @@ export const customTheme = createTheme({
     MuiMenuItem: {
       styleOverrides: {
         root: {
-          color: "#000",
+          color: "var(--black)",
         },
       },
     },
@@ -34,7 +37,8 @@ export const customTheme = createTheme({
         {
           props: { color: "primary", variant: "contained" },
           style: {
-            background: "linear-gradient(90deg, #FF8D6B 5%, #FFBA47 100%)",
+            background:
+              currentLanguage === "en" ? "var(--orange-gradient)" : "black",
           },
         },
       ],

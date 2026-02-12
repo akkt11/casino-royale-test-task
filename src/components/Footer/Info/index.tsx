@@ -38,7 +38,7 @@ export const Info = () => {
         <CertificateDescription>
           <AgeRestrictionIcon />
 
-          <Typography color="#FBFBFB70">{t("only")} 18+</Typography>
+          <Typography color="var(--dark-gray)">{t("only")} 18+</Typography>
         </CertificateDescription>
 
         <CertificateDescription>
@@ -46,7 +46,9 @@ export const Info = () => {
             <LicenseIcon />
           </div>
 
-          <Typography color="#FBFBFB70">{t("casinoCertified")}</Typography>
+          <Typography color="var(--dark-gray)">
+            {t("casinoCertified")}
+          </Typography>
         </CertificateDescription>
       </CertificateContainer>
 
@@ -55,10 +57,10 @@ export const Info = () => {
           value={currentLanguage?.id}
           onChange={(e) => hanldeChangeLang(e.target.value as number)}
           sx={{
-            background: "#ffffff10",
+            background: "var(--white-transparent)",
             minWidth: 289,
             borderRadius: "8px",
-            color: "#BABABA",
+            color: "var(--gray)",
           }}
         >
           {Geo.map(({ id, country, name }) => {
@@ -76,7 +78,7 @@ export const Info = () => {
         </Select>
 
         <SocialContainer>
-          <Typography color="#BABABA">{t("social")}</Typography>
+          <Typography color="var(--gray)">{t("social")}</Typography>
 
           <IconsContainer>
             <InstagramIcon />

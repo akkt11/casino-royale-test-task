@@ -1,9 +1,9 @@
-import { Button } from "@mui/material";
 import { CasinoRouletteIcon, LogoIcon } from "../../assets";
 import Styled from "./Home.styled";
 import { useState } from "react";
 import { GameModal } from "../../components/GameModal";
 import { useTranslation } from "react-i18next";
+import { Button } from "../../shared";
 
 const { Container, CasinoContainer } = Styled;
 
