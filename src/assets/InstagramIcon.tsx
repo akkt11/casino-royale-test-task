@@ -7,7 +7,7 @@ export const InstagramIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_4_38)">
+      <g clipPath="url(#clip0_4_38)">
         <path
           d="M39.8028 0H12.1845C5.4552 0 0 5.4552 0 12.1845V39.8028C0 46.5321 5.4552 51.9873 12.1845 51.9873H39.8028C46.5321 51.9873 51.9873 46.5321 51.9873 39.8028V12.1845C51.9873 5.4552 46.5321 0 39.8028 0Z"
           fill="url(#paint0_radial_4_38)"
@@ -26,10 +26,10 @@ export const InstagramIcon = () => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(13.8091 55.9913) rotate(-90) scale(51.5233 47.9207)"
         >
-          <stop stop-color="#FFDD55" />
-          <stop offset="0.1" stop-color="#FFDD55" />
-          <stop offset="0.5" stop-color="#FF543E" />
-          <stop offset="1" stop-color="#C837AB" />
+          <stop stopColor="#FFDD55" />
+          <stop offset="0.1" stopColor="#FFDD55" />
+          <stop offset="0.5" stopColor="#FF543E" />
+          <stop offset="1" stopColor="#C837AB" />
         </radialGradient>
         <clipPath id="clip0_4_38">
           <rect width="52" height="52" fill="white" />

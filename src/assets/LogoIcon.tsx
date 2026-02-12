@@ -1,16 +1,22 @@
-export const LogoIcon = () => {
+import type { ComponentProps } from "react";
+
+export const LogoIcon = ({
+  width = "264",
+  height = "120",
+}: ComponentProps<"svg">) => {
   return (
     <svg
-      width="264"
-      height="120"
+      width={width}
+      height={height}
       viewBox="0 0 264 120"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <g clip-path="url(#clip0_9_55)">
+      <g clipPath="url(#clip0_9_55)">
         <mask
           id="mask0_9_55"
+          style={{ maskType: "alpha" }}
           maskUnits="userSpaceOnUse"
           x="0"
           y="0"
@@ -49,8 +55,8 @@ export const LogoIcon = () => {
           y2="125.625"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#FF7700" />
-          <stop offset="1" stop-color="#FFD736" />
+          <stop stopColor="#FF7700" />
+          <stop offset="1" stopColor="#FFD736" />
         </linearGradient>
         <clipPath id="clip0_9_55">
           <rect width="263.691" height="120" fill="white" />
