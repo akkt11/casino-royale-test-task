@@ -1,34 +1,34 @@
 import { Button } from "@mui/material";
-import styled from "styled-components";
 import { CasinoRouletteIcon, LogoIcon } from "../../assets";
+import Styled from "./Home.styled";
+import { useState } from "react";
+import { GameModal } from "../../components/GameModal";
 
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 48px;
-`;
-
-const Column = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 32px;
-  min-width: 358px;
-`;
+const { Container, CasinoContainer } = Styled;
 
 export const Home = () => {
+  const [openGame, setOpenGame] = useState(false);
+
   return (
-    <Container>
-      <LogoIcon />
+    <>
+      <GameModal open={openGame} onClose={() => setOpenGame(false)} />
 
-      <Column>
-        <CasinoRouletteIcon />
+      <Container>
+        <LogoIcon />
 
-        <Button variant="contained" size="large" fullWidth>
-          Open the game
-        </Button>
-      </Column>
-    </Container>
+        <CasinoContainer>
+          <CasinoRouletteIcon />
+
+          <Button
+            variant="contained"
+            size="large"
+            fullWidth
+            onClick={() => setOpenGame(true)}
+          >
+            Open the game
+          </Button>
+        </CasinoContainer>
+      </Container>
+    </>
   );
 };
