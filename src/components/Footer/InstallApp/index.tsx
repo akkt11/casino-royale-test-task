@@ -33,6 +33,7 @@ export const InstallApp = () => {
             size="large"
             variant="contained"
             startIcon={<DownloadIcon />}
+            fullWidth
             sx={{
               "& .MuiButton-startIcon": { marginRight: "16px" },
               textTransform: "capitalize",

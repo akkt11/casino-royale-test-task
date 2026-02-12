@@ -1,10 +1,12 @@
+import type { CountryCode } from "../shared";
+
 interface CountryIconProps {
-  country: "tk";
+  country: CountryCode;
 }
 
 export const CountryFlagIcon = ({ country }: CountryIconProps) => {
   switch (country) {
-    case "tk":
+    case "tr":
       return (
         <svg
           width="24"
@@ -38,6 +40,130 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
           />
           <defs>
             <clipPath id="clip0_4_64">
+              <rect width="24" height="24" rx="12" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      );
+    case "en":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_en)">
+            <rect width="24" height="24" rx="12" fill="#00247D" />
+            <path d="M0 0L24 24M24 0L0 24" stroke="white" stroke-width="4" />
+            <path d="M0 0L24 24M24 0L0 24" stroke="#CF142B" stroke-width="2" />
+            <rect x="9" width="6" height="24" fill="white" />
+            <rect y="9" width="24" height="6" fill="white" />
+            <rect x="10" width="4" height="24" fill="#CF142B" />
+            <rect y="10" width="24" height="4" fill="#CF142B" />
+          </g>
+          <rect
+            x="0.375"
+            y="0.375"
+            width="23.25"
+            height="23.25"
+            rx="11.625"
+            stroke="white"
+            stroke-width="0.75"
+          />
+          <defs>
+            <clipPath id="clip0_en">
+              <rect width="24" height="24" rx="12" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      );
+    case "de":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_de)">
+            <rect width="24" height="24" rx="12" fill="#000000" />
+            <rect y="8" width="24" height="8" fill="#DD0000" />
+            <rect y="16" width="24" height="8" fill="#FFCE00" />
+          </g>
+          <rect
+            x="0.375"
+            y="0.375"
+            width="23.25"
+            height="23.25"
+            rx="11.625"
+            stroke="white"
+            stroke-width="0.75"
+          />
+          <defs>
+            <clipPath id="clip0_de">
+              <rect width="24" height="24" rx="12" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      );
+    case "ru":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_ru)">
+            <rect width="24" height="24" rx="12" fill="white" />
+            <rect y="8" width="24" height="8" fill="#0039A6" />
+            <rect y="16" width="24" height="8" fill="#D52B1E" />
+          </g>
+          <rect
+            x="0.375"
+            y="0.375"
+            width="23.25"
+            height="23.25"
+            rx="11.625"
+            stroke="white"
+            stroke-width="0.75"
+          />
+          <defs>
+            <clipPath id="clip0_ru">
+              <rect width="24" height="24" rx="12" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      );
+    case "kg":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_kg)">
+            <rect width="24" height="24" rx="12" fill="#E8112D" />
+            <circle cx="12" cy="12" r="5" fill="#FFCC00" />
+            <circle cx="12" cy="12" r="2.4" fill="#E8112D" />
+          </g>
+          <rect
+            x="0.375"
+            y="0.375"
+            width="23.25"
+            height="23.25"
+            rx="11.625"
+            stroke="white"
+            stroke-width="0.75"
+          />
+          <defs>
+            <clipPath id="clip0_kg">
               <rect width="24" height="24" rx="12" fill="white" />
             </clipPath>
           </defs>

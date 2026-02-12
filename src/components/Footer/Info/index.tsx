@@ -10,6 +10,7 @@ import {
   TelegramIcon,
   XIcon,
 } from "../../../assets";
+import { Geo } from "../../../shared";
 
 const {
   Container,
@@ -54,10 +55,18 @@ export const Info = () => {
             color: "#BABABA",
           }}
         >
-          <MenuItem value={10} sx={{ display: "flex", gap: "8px" }}>
-            <CountryFlagIcon country="tk" />
-            <Typography>Turkish</Typography>
-          </MenuItem>
+          {Geo.map(({ id, country, name }) => {
+            return (
+              <MenuItem
+                key={id}
+                value={id}
+                sx={{ display: "flex", gap: "8px" }}
+              >
+                <CountryFlagIcon country={country} />
+                <Typography>{name}</Typography>
+              </MenuItem>
+            );
+          })}
         </Select>
 
         <SocialContainer>
