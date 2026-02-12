@@ -1,35 +1,14 @@
-import { MenuItem, Select, Typography } from "@mui/material";
-import { Info } from "./Info";
-
+import { InstallApp } from "./InstallApp";
 import Styled from "./Footer.styled";
-import { CountryFlagIcon } from "../../assets";
+import { Info } from "./Info";
 
 const { Container } = Styled;
 
 export const Footer = () => {
   return (
     <Container>
+      <InstallApp />
       <Info />
-
-      <div>
-        <Select
-          labelId="select-label"
-          id="select"
-          // value={age}
-          // onChange={handleChange}
-          sx={{
-            background: "#ffffff10",
-            minWidth: 289,
-            borderRadius: "8px",
-            color: "#BABABA",
-          }}
-        >
-          <MenuItem value={10} sx={{ display: "flex", gap: "8px" }}>
-            <CountryFlagIcon country="tk" />
-            <Typography>Turkish</Typography>
-          </MenuItem>
-        </Select>
-      </div>
     </Container>
   );
 };

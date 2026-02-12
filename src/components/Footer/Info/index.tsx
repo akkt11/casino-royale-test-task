@@ -1,18 +1,21 @@
-import { Typography, Button } from "@mui/material";
+import { MenuItem, Select, Typography } from "@mui/material";
+import Styled from "./Info.styled";
+
 import {
-  ManWithGlassesIcon,
-  LogoIcon,
-  DownloadIcon,
   AgeRestrictionIcon,
+  CountryFlagIcon,
+  EmailIcon,
+  InstagramIcon,
   LicenseIcon,
+  TelegramIcon,
+  XIcon,
 } from "../../../assets";
-import Styled from "./info.styled";
 
 const {
   Container,
-  InfoContainer,
-  DownloadContainer,
-  DescriptionContainer,
+  ActionContainer,
+  SocialContainer,
+  IconsContainer,
   CertificateContainer,
   CertificateDescription,
 } = Styled;
@@ -20,47 +23,54 @@ const {
 export const Info = () => {
   return (
     <Container>
-      <ManWithGlassesIcon />
-
-      <InfoContainer>
-        <LogoIcon width={175} height={80} />
-
-        <DownloadContainer>
-          <DescriptionContainer>
-            <Typography variant="h4" fontSize={32} fontWeight={600}>
-              Download Casino
-            </Typography>
-
-            <Typography color="#BABABA">Play Min anywhere, anytime</Typography>
-          </DescriptionContainer>
-
-          <Button
-            size="large"
-            variant="contained"
-            startIcon={<DownloadIcon />}
-            sx={{
-              "& .MuiButton-startIcon": { marginRight: "16px" },
-              textTransform: "capitalize",
-            }}
-          >
-            Install App
-          </Button>
-        </DownloadContainer>
-      </InfoContainer>
-
       <CertificateContainer>
         <CertificateDescription>
           <AgeRestrictionIcon />
+
           <Typography color="#FBFBFB70">Only 18+</Typography>
         </CertificateDescription>
 
         <CertificateDescription>
-          <LicenseIcon />
+          <div>
+            <LicenseIcon />
+          </div>
+
           <Typography color="#FBFBFB70">
             Casino is certified by the Anjouan Gaming Authority
           </Typography>
         </CertificateDescription>
       </CertificateContainer>
+
+      <ActionContainer>
+        <Select
+          labelId="select-label"
+          id="select"
+          // value={age}
+          // onChange={handleChange}
+          sx={{
+            background: "#ffffff10",
+            minWidth: 289,
+            borderRadius: "8px",
+            color: "#BABABA",
+          }}
+        >
+          <MenuItem value={10} sx={{ display: "flex", gap: "8px" }}>
+            <CountryFlagIcon country="tk" />
+            <Typography>Turkish</Typography>
+          </MenuItem>
+        </Select>
+
+        <SocialContainer>
+          <Typography color="#BABABA">Us on social media:</Typography>
+
+          <IconsContainer>
+            <InstagramIcon />
+            <TelegramIcon />
+            <XIcon />
+            <EmailIcon />
+          </IconsContainer>
+        </SocialContainer>
+      </ActionContainer>
     </Container>
   );
 };
