@@ -1,7 +1,5 @@
+import { GAME_BASE_URL } from "../../shared";
 import Styled from "./GameModal.styled";
-
-const GAME_URL =
-  "https://gateway.eva-digital-playground.com/v0/casino/games/launch?gameId=n2-novomatic-book-of-ra-deluxe&channel=desktop&partnerKey=0wl&lobbyUrl=https://chinchincasino.com&mode=demo&language=en";
 
 interface GameModalProps {
   open: boolean;
@@ -20,7 +18,7 @@ export const GameModal = ({ open, onClose }: GameModalProps) => {
           ✕
         </CloseButton>
 
-        <Iframe src={GAME_URL} allowFullScreen loading="lazy" />
+        <Iframe src={GAME_BASE_URL} allowFullScreen loading="lazy" />
       </IframeContainer>
     </Overlay>
   );

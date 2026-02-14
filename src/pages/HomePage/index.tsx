@@ -1,5 +1,5 @@
 import { CasinoRouletteIcon, LogoIcon } from "../../assets";
-import Styled from "./Home.styled";
+import Styled from "./HomePage.styled";
 import { useState } from "react";
 import { GameModal } from "../../components/GameModal";
 import { useTranslation } from "react-i18next";
@@ -8,7 +8,7 @@ import { Button } from "../../shared";
 const { HomeContainer, HeroContainer, HeroInnerContainer, CasinoContainer } =
   Styled;
 
-export const Home = () => {
+export const HomePage = () => {
   const { t } = useTranslation();
   const [openGame, setOpenGame] = useState(false);
 

@@ -1,6 +1,6 @@
 import { Footer } from "./components/Footer";
 import Styled from "./App.styled";
-import { Home } from "./pages/Home";
+import { HomePage } from "./pages/HomePage";
 import "./App.css";
 
 const { Main } = Styled;
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Main>
-        <Home />
+        <HomePage />
       </Main>
 
       <Footer />
