@@ -1,5 +1,5 @@
 import { MenuItem, Select, Typography } from "@mui/material";
-import Styled from "./Info.styled.ts";
+import Styled from "./InfoBlock.styled.ts";
 
 import {
   AgeRestrictionIcon,
@@ -9,8 +9,8 @@ import {
   LicenseIcon,
   TelegramIcon,
   XIcon,
-} from "../../../assets";
-import { Geo } from "../../../shared";
+} from "../../../assets/index.ts";
+import { Geo } from "../../../shared/index.ts";
 import { useTranslation } from "react-i18next";
 
 const {
@@ -22,7 +22,7 @@ const {
   CertificateDescription,
 } = Styled;
 
-export const Info = () => {
+export const InfoBlock = () => {
   const { t, i18n } = useTranslation();
 
   const hanldeChangeLang = (value: number) => {

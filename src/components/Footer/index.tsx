@@ -1,14 +1,14 @@
-import { InstallApp } from "./InstallApp";
+import { InstallAppBlock } from "./InstallAppBlock";
 import Styled from "./Footer.styled";
-import { Info } from "./Info";
+import { InfoBlock } from "./InfoBlock";
 
 const { Container } = Styled;
 
 export const Footer = () => {
   return (
     <Container>
-      <InstallApp />
-      <Info />
+      <InstallAppBlock />
+      <InfoBlock />
     </Container>
   );
 };

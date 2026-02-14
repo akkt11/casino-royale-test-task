@@ -43,6 +43,7 @@ export default {
 
   CertificateContainer: styled.div`
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 24px;
 

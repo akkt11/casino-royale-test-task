@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 import { ManWithGlassesIcon, LogoIcon, DownloadIcon } from "../../../assets";
-import Styled from "./InstallApp.styled";
+import Styled from "./InstallAppBlock.styled";
 import { useTranslation } from "react-i18next";
 import { Button, type CountryCode } from "../../../shared";
 
@@ -12,7 +12,7 @@ const {
   IconContainer,
 } = Styled;
 
-export const InstallApp = () => {
+export const InstallAppBlock = () => {
   const { t, i18n } = useTranslation();
 
   return (
