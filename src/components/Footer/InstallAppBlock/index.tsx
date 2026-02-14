@@ -39,8 +39,8 @@ export const InstallAppBlock = () => {
             startIcon={<DownloadIcon />}
             fullWidth
             sx={{
-              "& .MuiButton-startIcon": { marginRight: "16px" },
               textTransform: "capitalize",
+              "& .MuiButton-startIcon": { marginRight: "16px" },
             }}
           >
             {t("installApp")}

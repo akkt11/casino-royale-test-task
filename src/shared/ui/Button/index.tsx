@@ -10,13 +10,16 @@ const backgroundColors: Record<CountryCode, { color: string }> = {
   tr: { color: "var(--red-gradient)" },
 };
 
-export const Button = ({ children, ...rest }: ButtonProps) => {
+export const Button = ({ children, sx, ...rest }: ButtonProps) => {
   const { i18n } = useTranslation();
 
   return (
     <ButtonMaterial
       {...rest}
-      sx={{ background: backgroundColors[i18n.language as CountryCode].color }}
+      sx={{
+        ...sx,
+        background: backgroundColors[i18n.language as CountryCode].color,
+      }}
     >
       {children}
     </ButtonMaterial>

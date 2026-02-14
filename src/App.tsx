@@ -3,17 +3,17 @@ import Styled from "./App.styled";
 import { Home } from "./pages/Home";
 import "./App.css";
 
-const { Container, Main } = Styled;
+const { Main } = Styled;
 
 function App() {
   return (
-    <Container>
+    <>
       <Main>
         <Home />
       </Main>
 
       <Footer />
-    </Container>
+    </>
   );
 }
 

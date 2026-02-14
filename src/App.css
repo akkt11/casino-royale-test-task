@@ -1,3 +1,14 @@
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 :root {
   --orange-gradient: linear-gradient(90deg, #ff8d6b 5%, #ffba47 100%);
   --violet-gradient: linear-gradient(to right, #9e6aff, #c7acfb);
