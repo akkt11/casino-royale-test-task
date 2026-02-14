@@ -35,10 +35,7 @@ export default {
   IconsContainer: styled.div`
     display: flex;
     gap: 4px;
-
-    @media (max-width: 1370px) {
-      margin-top: 12px;
-    }
+    margin-top: 12px;
   `,
 
   CertificateContainer: styled.div`

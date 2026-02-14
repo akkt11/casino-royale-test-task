@@ -13,6 +13,13 @@ export const customTheme = createTheme({
     },
   },
   components: {
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          padding: 0,
+        },
+      },
+    },
     MuiMenuItem: {
       styleOverrides: {
         root: {

@@ -1,4 +1,4 @@
-import { MenuItem, Select, Typography } from "@mui/material";
+import { IconButton, MenuItem, Select, Typography } from "@mui/material";
 import Styled from "./InfoBlock.styled.ts";
 
 import {
@@ -81,10 +81,21 @@ export const InfoBlock = () => {
           <Typography color="var(--gray)">{t("social")}</Typography>
 
           <IconsContainer>
-            <InstagramIcon />
-            <TelegramIcon />
-            <XIcon />
-            <EmailIcon />
+            <IconButton>
+              <InstagramIcon />
+            </IconButton>
+
+            <IconButton>
+              <TelegramIcon />
+            </IconButton>
+
+            <IconButton>
+              <XIcon />
+            </IconButton>
+
+            <IconButton>
+              <EmailIcon />
+            </IconButton>
           </IconsContainer>
         </SocialContainer>
       </ActionContainer>
