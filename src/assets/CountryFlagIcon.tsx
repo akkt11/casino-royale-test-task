@@ -15,7 +15,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_4_64)">
+          <g clipPath="url(#clip0_4_64)">
             <path
               d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
               fill="#ED5345"
@@ -36,7 +36,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
             height="23.25"
             rx="11.625"
             stroke="white"
-            stroke-width="0.75"
+            strokeWidth="0.75"
           />
           <defs>
             <clipPath id="clip0_4_64">
@@ -54,10 +54,10 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_en)">
+          <g clipPath="url(#clip0_en)">
             <rect width="24" height="24" rx="12" fill="#00247D" />
-            <path d="M0 0L24 24M24 0L0 24" stroke="white" stroke-width="4" />
-            <path d="M0 0L24 24M24 0L0 24" stroke="#CF142B" stroke-width="2" />
+            <path d="M0 0L24 24M24 0L0 24" stroke="white" strokeWidth="4" />
+            <path d="M0 0L24 24M24 0L0 24" stroke="#CF142B" strokeWidth="2" />
             <rect x="9" width="6" height="24" fill="white" />
             <rect y="9" width="24" height="6" fill="white" />
             <rect x="10" width="4" height="24" fill="#CF142B" />
@@ -70,7 +70,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
             height="23.25"
             rx="11.625"
             stroke="white"
-            stroke-width="0.75"
+            strokeWidth="0.75"
           />
           <defs>
             <clipPath id="clip0_en">
@@ -88,7 +88,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_de)">
+          <g clipPath="url(#clip0_de)">
             <rect width="24" height="24" rx="12" fill="#000000" />
             <rect y="8" width="24" height="8" fill="#DD0000" />
             <rect y="16" width="24" height="8" fill="#FFCE00" />
@@ -100,7 +100,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
             height="23.25"
             rx="11.625"
             stroke="white"
-            stroke-width="0.75"
+            strokeWidth="0.75"
           />
           <defs>
             <clipPath id="clip0_de">
@@ -118,7 +118,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_ru)">
+          <g clipPath="url(#clip0_ru)">
             <rect width="24" height="24" rx="12" fill="white" />
             <rect y="8" width="24" height="8" fill="#0039A6" />
             <rect y="16" width="24" height="8" fill="#D52B1E" />
@@ -130,7 +130,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
             height="23.25"
             rx="11.625"
             stroke="white"
-            stroke-width="0.75"
+            strokeWidth="0.75"
           />
           <defs>
             <clipPath id="clip0_ru">
@@ -148,7 +148,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_kg)">
+          <g clipPath="url(#clip0_kg)">
             <rect width="24" height="24" rx="12" fill="#E8112D" />
             <circle cx="12" cy="12" r="5" fill="#FFCC00" />
             <circle cx="12" cy="12" r="2.4" fill="#E8112D" />
@@ -160,7 +160,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
             height="23.25"
             rx="11.625"
             stroke="white"
-            stroke-width="0.75"
+            strokeWidth="0.75"
           />
           <defs>
             <clipPath id="clip0_kg">
@@ -178,7 +178,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g clip-path="url(#clip0_4_64)">
+          <g clipPath="url(#clip0_4_64)">
             <path
               d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
               fill="#ED5345"
@@ -199,7 +199,7 @@ export const CountryFlagIcon = ({ country }: CountryIconProps) => {
             height="23.25"
             rx="11.625"
             stroke="white"
-            stroke-width="0.75"
+            strokeWidth="0.75"
           />
           <defs>
             <clipPath id="clip0_4_64">

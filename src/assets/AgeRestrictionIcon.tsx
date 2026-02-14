@@ -7,7 +7,7 @@ export const AgeRestrictionIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_4_87)">
+      <g clipPath="url(#clip0_4_87)">
         <path
           d="M18.3472 38.8789V23.1324H14.707V19.0972H23.3702V38.8789H18.3472Z"
           fill="white"

@@ -33,7 +33,7 @@ export const TelegramIcon = () => {
           rx="7.5"
           transform="matrix(-1 0 0 1 51 0)"
           stroke="white"
-          stroke-opacity="0.4"
+          strokeOpacity="0.4"
         />
         <g clipPath="url(#clip1_4_43)">
           <path
