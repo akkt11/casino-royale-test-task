@@ -1,19 +1,17 @@
-import { Footer } from "./components/Footer";
-import Styled from "./App.styled";
-import { HomePage } from "./pages/HomePage";
 import "./App.css";
-
-const { Main } = Styled;
+import { Route, Routes } from "react-router";
+import { GamePage, HomePage } from "./pages";
+import { Layout } from "./components";
 
 function App() {
   return (
-    <>
-      <Main>
-        <HomePage />
-      </Main>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route index element={<HomePage />} />
+      </Route>
 
-      <Footer />
-    </>
+      <Route path="/game" element={<GamePage />} />
+    </Routes>
   );
 }
 

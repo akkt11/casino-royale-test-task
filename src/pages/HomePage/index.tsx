@@ -1,21 +1,22 @@
 import { CasinoRouletteIcon, LogoIcon } from "../../assets";
-import Styled from "./HomePage.styled";
-import { useState } from "react";
-import { GameModal } from "../../components/GameModal";
+import Styled from "./Home.styled";
 import { useTranslation } from "react-i18next";
 import { Button } from "../../shared";
+import { useNavigate } from "react-router";
 
 const { HomeContainer, HeroContainer, HeroInnerContainer, CasinoContainer } =
   Styled;
 
 export const HomePage = () => {
+  const navigate = useNavigate();
   const { t } = useTranslation();
-  const [openGame, setOpenGame] = useState(false);
+
+  const handleOpenGame = () => {
+    navigate("/game");
+  };
 
   return (
     <HomeContainer>
-      <GameModal open={openGame} onClose={() => setOpenGame(false)} />
-
       <HeroContainer>
         <HeroInnerContainer>
           <LogoIcon />
@@ -27,7 +28,7 @@ export const HomePage = () => {
               variant="contained"
               size="large"
               fullWidth
-              onClick={() => setOpenGame(true)}
+              onClick={handleOpenGame}
             >
               {t("openGame")}
             </Button>
