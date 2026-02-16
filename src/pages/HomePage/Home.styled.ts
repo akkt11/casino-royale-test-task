@@ -2,18 +2,16 @@ import styled from "styled-components";
 
 export default {
   HomeContainer: styled.section`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 199px 0;
     flex: 1;
     background: url(/background.png) no-repeat center / cover;
   `,
 
   HeroContainer: styled.div`
-    max-width: 358px;
     text-align: center;
-    margin: 0 auto;
-  `,
-
-  HeroInnerContainer: styled.div`
-    padding-top: 227px;
   `,
 
   CasinoContainer: styled.div`

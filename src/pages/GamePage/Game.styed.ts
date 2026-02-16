@@ -6,8 +6,10 @@ export default {
     height: 100%;
     border: none;
   `,
+
   IframeContainer: styled.div`
     height: 100vh;
+    overflow: hidden;
     background: var(--black);
   `,
 

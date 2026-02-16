@@ -4,8 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Button } from "../../shared";
 import { useNavigate } from "react-router";
 
-const { HomeContainer, HeroContainer, HeroInnerContainer, CasinoContainer } =
-  Styled;
+const { HomeContainer, HeroContainer, CasinoContainer } = Styled;
 
 export const HomePage = () => {
   const navigate = useNavigate();
@@ -18,22 +17,20 @@ export const HomePage = () => {
   return (
     <HomeContainer>
       <HeroContainer>
-        <HeroInnerContainer>
-          <LogoIcon />
+        <LogoIcon />
 
-          <CasinoContainer>
-            <CasinoRouletteIcon />
+        <CasinoContainer>
+          <CasinoRouletteIcon />
 
-            <Button
-              variant="contained"
-              size="large"
-              fullWidth
-              onClick={handleOpenGame}
-            >
-              {t("openGame")}
-            </Button>
-          </CasinoContainer>
-        </HeroInnerContainer>
+          <Button
+            variant="contained"
+            size="large"
+            fullWidth
+            onClick={handleOpenGame}
+          >
+            {t("openGame")}
+          </Button>
+        </CasinoContainer>
       </HeroContainer>
     </HomeContainer>
   );
