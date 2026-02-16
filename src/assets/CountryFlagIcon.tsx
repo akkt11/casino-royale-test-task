@@ -1,4 +1,4 @@
-import type { CountryCode } from "../shared";
+import type { CountryCode } from "../shared/types";
 
 interface CountryIconProps {
   country: CountryCode;

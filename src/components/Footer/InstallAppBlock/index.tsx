@@ -1,8 +1,8 @@
 import { Typography } from "@mui/material";
-import { ManWithGlassesIcon, LogoIcon, DownloadIcon } from "../../../assets";
+import { FooterElementIcon, LogoIcon, DownloadIcon } from "../../../assets";
 import Styled from "./InstallAppBlock.styled";
 import { useTranslation } from "react-i18next";
-import { Button, type CountryCode } from "../../../shared";
+import { Button } from "../../../shared";
 
 const {
   Container,
@@ -18,7 +18,7 @@ export const InstallAppBlock = () => {
   return (
     <Container>
       <IconContainer>
-        <ManWithGlassesIcon country={i18n.language as CountryCode} />
+        <FooterElementIcon country={i18n.language} />
       </IconContainer>
 
       <InfoContainer>

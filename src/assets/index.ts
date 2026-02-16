@@ -4,7 +4,7 @@ export * from "./DownloadIon";
 export * from "./EmailIcon";
 export * from "./InstagramIcon";
 export * from "./LogoIcon";
-export * from "./ManWithGlassesIcon";
+export * from "./FooterElementIcon";
 export * from "./TelegramIcon";
 export * from "./XIcon";
 export * from "./AgeRestrictionIcon";
