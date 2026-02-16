@@ -10,7 +10,7 @@ export default {
       gap: 40px;
     }
 
-    @media (max-width: 1370px) {
+    @media (max-width: 1200px) {
       flex-direction: column;
     }
   `,
@@ -25,7 +25,11 @@ export default {
     border-radius: 16px;
     background: var(--white-transparent);
 
-    @media (max-width: 1370px) {
+    @media (max-width: 1365px) {
+      width: 300px;
+    }
+
+    @media (max-width: 1200px) {
       max-width: 390px;
       margin: 0 5px;
       width: 100%;
@@ -45,7 +49,7 @@ export default {
   `,
 
   IconContainer: styled.div`
-    @media (max-width: 1370px) {
+    @media (max-width: 1200px) {
       display: none;
     }
   `,

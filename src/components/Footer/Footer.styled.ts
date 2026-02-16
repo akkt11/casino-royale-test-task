@@ -11,7 +11,7 @@ export default {
       gap: 40px;
     }
 
-    @media (max-width: 1370px) {
+    @media (max-width: 1200px) {
       flex-direction: column;
       gap: 52px;
     }

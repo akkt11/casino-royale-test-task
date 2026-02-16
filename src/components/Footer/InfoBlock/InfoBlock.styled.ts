@@ -6,7 +6,7 @@ export default {
     justify-content: space-between;
     width: 100%;
 
-    @media (max-width: 1370px) {
+    @media (max-width: 1200px) {
       flex-direction: column-reverse;
       align-items: center;
     }
@@ -18,7 +18,7 @@ export default {
     align-items: end;
     justify-content: space-between;
 
-    @media (max-width: 1370px) {
+    @media (max-width: 1200px) {
       align-items: center;
     }
   `,
@@ -26,7 +26,7 @@ export default {
   SocialContainer: styled.div`
     text-align: right;
 
-    @media (max-width: 1370px) {
+    @media (max-width: 1200px) {
       text-align: center;
       margin-top: 60px;
     }
@@ -44,7 +44,8 @@ export default {
     flex-direction: column;
     gap: 24px;
 
-    @media (max-width: 1370px) {
+    @media (max-width: 1200px) {
+      text-align: center;
       flex-direction: row;
     }
 
@@ -59,10 +60,11 @@ export default {
     align-items: center;
     gap: 12px;
 
-    @media (max-width: 1370px) {
+    @media (max-width: 1200px) {
       flex-direction: column;
       flex: 1;
       margin-top: 52px;
+      min-width: 213px;
       gap: 24px;
     }
 
