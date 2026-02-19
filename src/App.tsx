@@ -1,17 +1,23 @@
+import { BrowserRouter } from "react-router";
+
+import { CssBaseline } from "@mui/material";
+import { I18nextProvider } from "react-i18next";
+import i18n from "./i18n";
 import "./App.css";
-import { Route, Routes } from "react-router";
-import { GamePage, HomePage } from "./pages";
-import { Layout } from "./components";
+import { customTheme } from "./shared";
+import { AppRoutes } from "./routes/AppRoutes";
+import { ThemeProvider } from "@mui/material/styles";
 
 function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route index element={<HomePage />} />
-      </Route>
-
-      <Route path="/game" element={<GamePage />} />
-    </Routes>
+    <BrowserRouter>
+      <I18nextProvider i18n={i18n}>
+        <ThemeProvider theme={customTheme}>
+          <CssBaseline />
+          <AppRoutes />
+        </ThemeProvider>
+      </I18nextProvider>
+    </BrowserRouter>
   );
 }
 

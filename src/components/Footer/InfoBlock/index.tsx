@@ -1,4 +1,4 @@
-import { IconButton, MenuItem, Select, Typography } from "@mui/material";
+import { IconButton, Typography } from "@mui/material";
 import Styled from "./InfoBlock.styled.ts";
 
 import {
@@ -20,6 +20,8 @@ const {
   IconsContainer,
   CertificateContainer,
   CertificateDescription,
+  LangSelect,
+  LangMenuItem,
 } = Styled;
 
 export const InfoBlock = () => {
@@ -53,29 +55,19 @@ export const InfoBlock = () => {
       </CertificateContainer>
 
       <ActionContainer>
-        <Select
+        <LangSelect
           value={currentLanguage?.id}
           onChange={(e) => hanldeChangeLang(e.target.value as number)}
-          sx={{
-            background: "var(--white-transparent)",
-            minWidth: 289,
-            borderRadius: "8px",
-            color: "var(--gray)",
-          }}
         >
           {Geo.map(({ id, country, name }) => {
             return (
-              <MenuItem
-                key={id}
-                value={id}
-                sx={{ display: "flex", gap: "8px" }}
-              >
+              <LangMenuItem key={id} value={id}>
                 <CountryFlagIcon country={country} />
                 <Typography>{name}</Typography>
-              </MenuItem>
+              </LangMenuItem>
             );
           })}
-        </Select>
+        </LangSelect>
 
         <SocialContainer>
           <Typography color="var(--gray)">{t("social")}</Typography>
