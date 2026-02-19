@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import { MenuItem, Select } from "@mui/material";
+import styled from "@emotion/styled";
 
 export default {
   Container: styled.div`
@@ -71,5 +72,17 @@ export default {
     @media (max-width: 480px) {
       margin-top: 0px;
     }
+  `,
+
+  LangSelect: styled(Select)`
+    background: var(--white-transparent);
+    min-width: 289px;
+    border-radius: 8px;
+    color: var(--gray);
+  `,
+
+  LangMenuItem: styled(MenuItem)`
+    display: flex;
+    gap: 8px;
   `,
 };
